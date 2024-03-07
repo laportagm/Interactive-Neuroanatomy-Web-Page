@@ -1,0 +1,224 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  vertical-align: baseline;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Define root variables for consistent theming */
+:root {
+  --primary-bg-color: #212121;
+  --secondary-bg-color: #323232;
+  --tertiary-bg-color: #121212;
+  --text-color: #e0e0e0;
+  --accent-color: #2979ff;
+  --accent-hover-color: #5390ff;
+  --navbar-bg-color: #262626;
+  --border-radius: 10px;
+  --default-padding: 0.4rem 0.8rem;
+  --hover-transition: background-color 0.25s ease, box-shadow 0.25s ease, color 0.25s ease;
+  --box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  --button-hover-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+  --z-index-nav: 1000;
+  --navbar-height: 50px;
+  --border-focus: 3px solid var(--accent-color);
+}
+
+/* Center content horizontally */
+.justify-content-center {
+  justify-content: center;
+}
+
+/* Apply styles to the homepage */
+/* .homepage {}
+
+/* Navigation Bar Styles */
+/* .color-navbar {}
+
+/* Picture Header Styles */
+.header-section {
+  display: contents;
+}
+
+.picture-header {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  max-height: 100vh;
+  object-fit: cover;
+}
+
+/* Page Hero Styles */
+.page-hero {
+  font-size: 3rem;
+  font-weight: bold;
+  color: rgba(172, 151, 138, 0.946);
+  text-align: center;
+}
+
+/* Title Styles */
+.title-1 h3 {
+  font-size: 2rem;
+}
+
+.title-1 small {
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-family: 'Helvetica', Arial, sans-serif;
+  color: rgba(172, 151, 138, 0.946);
+}
+
+/* Space Styles */
+.space {
+  margin-bottom: 20px;
+}
+
+/* Background Blob Styles */
+.bg-blob {
+  margin: 0 auto;
+  display: flex;
+  position: relative;
+  z-index: -1;
+  filter: blur(5px);
+}
+
+/* Wrapper Styles */
+.content-section {
+  background-color: none;
+}
+
+.visually-appealing-spacer {
+  height: 10px;
+}
+
+/* .parallax-bg {} */
+
+.wrapper {
+  background: rgba(17, 16, 16, 0.406);
+}
+
+.info-container {
+  gap: 40px;
+}
+
+/* Main Container Styles */
+.main-container {
+  color: rgba(198, 178, 166, 0.946);
+}
+
+/* Scrollbar Styles for WebKit browsers (Safari, Chrome) */
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(172, 151, 138, 0.946);
+  border-radius: 5px;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Scrollbar Styles for Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(172, 151, 138, 0.946) rgba(255, 255, 255, 0.2);
+}
+
+/* Mobile-specific CSS for PresentationPage */
+.space {
+  height: 20px; /* Reduced height for mobile */
+}
+
+.picture-header {
+  width: auto;
+  height: auto; /* Allow image to adjust its height */
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.header-filter {
+  background: rgba(58, 56, 56, 0.126);
+  width: 100%;
+  height: auto; /* Allow content to expand in height */
+}
+
+.content-center {
+  text-align: center;
+  padding: 10px; /* Reduced padding for mobile */
+  max-width: 100%; /* Full width for mobile */
+  margin: auto;
+}
+
+/* Page Header */
+.page-header-image {
+  height: 300px; /* Reduced height for mobile */
+}
+
+.parallax2 {
+  display: flex;
+  justify-content: center;
+}
+
+.page-header {
+  height: 300px; /* Reduced height for mobile */
+}
+
+.title-1 h3 {
+  font-size: 30px; /* Smaller font size for mobile */
+  color: #c6baba;
+}
+
+.title-1 small {
+  font-size: 18px; /* Smaller font size for mobile */
+  color: #949494;
+  font-weight: bold;
+  font-family: 'Helvetica', Arial, sans-serif;
+}
+
+/* Content Center Brand */
+.content-center.brand {
+  padding: 10px; /* Reduced padding for mobile */
+  margin: 15px auto; /* Reduced margin for mobile */
+  max-width: 100%; /* Full width for mobile */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .page-hero {
+    font-size: 2rem; /* Adjusted font size for mobile */
+    margin-bottom: 0.3rem; /* Reduced margin bottom */
+  }
+
+  .title-1 h3 {
+    font-size: 1.2rem; /* Adjusted font size for mobile */
+    color: #c6baba;
+  }
+
+  .title-1 small {
+    font-size: 18px; /* Adjusted font size for mobile */
+    color: #949494;
+    font-weight: bold;
+    font-family: 'Helvetica', Arial, sans-serif;
+  }
+
+  .h1-seo {
+    font-size: 1.5rem; /* Adjusted font size for mobile */
+  }
+
+  h3 {
+    font-size: 1rem; /* Adjusted font size for mobile */
+  }
+
+  .bg-blob {
+    -webkit-filter: blur(2px); /* Reduced blur effect for mobile */
+    filter: blur(2px); /* Reduced blur effect for mobile */
+  }
+}

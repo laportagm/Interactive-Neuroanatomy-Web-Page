@@ -1,0 +1,19 @@
+.title1 {
+    text-align: left;
+
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    text-decoration: underline solid white 2px; 
+    text-underline-offset: 7px;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.col-md-3 {
+    text-align: center;
+}
+
+.btn-wrapper {
+    text-align: center;
+}

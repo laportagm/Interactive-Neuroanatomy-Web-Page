@@ -1,0 +1,174 @@
+/* QuizLayout.module.css */
+
+/* Quiz Container Styles */
+.quizContainer {
+  width: auto;
+  height: auto;
+  border: 1px solid #495057; /* Add border with a color */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin: auto;
+}
+
+/* Selector Styles */
+.selector {
+  left: 2rem;
+}
+
+/* Mobile Styles */
+.quizContainerMobile {
+  padding: 15px;
+  margin: auto;
+  width: 100%;
+  background-color: #f8f9fa; /* Consistent background color */
+  align-items: center;
+}
+
+/* Quiz Card Styles */
+.quizCard {
+  background-color: transparent; /* Card background */
+}
+
+/* Advanced Quiz Selector Styles */
+.advancedQuizSelector {
+  margin-bottom: 20px; /* Spacing below the selector */
+  font-size: 1rem; /* Font size */
+  color: #495057; /* Font color */
+}
+
+/* Enhanced Card Hover Effect */
+.enhanced-card {
+  transition: transform 0.2s; /* Smooth transition for hover effect */
+}
+
+.enhanced-card:hover {
+  transform: scale(1.03); /* Slight increase in size on hover */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 850px) {
+  .quizContainer {
+    padding: 10px;
+  }
+
+  .quizCard {
+    padding: 10px;
+  }
+
+  .advancedQuizSelector {
+    font-size: 0.9rem;
+  }
+}
+
+/* Additional responsive adjustments can be added as needed */
+
+
+
+/* Define root variables for consistent theming */
+:root {
+  --primary-bg-color: #212121;
+  --secondary-bg-color: #323232;
+  --tertiary-bg-color: #121212;
+  --accent-color: #ecbf9ff0; /* A light gray that stands out on the dark background */
+  --text-color: #bfbfbf; /* A slightly darker shade of gray for the subtitle */
+  --navbar-bg-color: #262626;
+  --border-radius: 10px;
+  --default-padding: 0.4rem 0.8rem;
+  --hover-transition: background-color 0.35s ease, box-shadow 0.25s ease, color 0.25s ease;
+  --box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  --button-hover-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+  --z-index-nav: 1000;
+  --navbar-height: 50px;
+  --border-focus: 3px solid var(--accent-color);
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: var(--navbar-bg-color);
+  color: #fff;
+  padding: 1rem;
+}
+
+.navbar a {
+  color: #fff;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Additional Styles for React Quiz Container */
+.react-quiz-container {
+  border-radius: 8px;
+  justify-content: center;
+  margin-bottom: 15px;
+  padding-bottom: 35px;
+  text-align: center;
+  width: auto;
+  margin: auto;
+  box-shadow: inset;
+}
+
+/* Styling for Info Section */
+.info1 {
+  border-radius: 0.1rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3); /* Softer shadow */
+  padding: 1rem;
+  margin-top: 2rem;
+  width: auto;
+  margin: auto;
+  background: linear-gradient(145deg, rgba(23, 26, 63, 0.5), rgba(60, 62, 120, 0.69)); /* Gradient background */
+  color: #dac7ba; /* White text for contrast */
+  font-weight: 200;
+  text-transform: bold;
+  text-align: center;
+}
+
+/* Quiz Option Hover Effect */
+.quiz-option:hover {
+  background-color: #f8f8f8;
+}
+
+/* Quiz Submit Button Styles */
+.quiz-submit-btn {
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 1rem;
+}
+
+/* Page Container Styles */
+.page-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+}
+
+/* Spacer Styles */
+.spacer {
+  height: 20px; /* Adjust the height as needed */
+  width: 100%; /* Set the width to 100% to span the full width of the container */
+  margin: 20px 0;
+}
+
+/* Custom Styles for Quiz Container with Class Name (Again) */
+.QuizLayout_quizContainer_ROOH-container {
+  /* Define your CSS styles here */
+  /* For example: */
+  background-color: none; /* Set background color */
+  padding: 20px; /* Set padding */
+  border: 1px solid #ccc; /* Add a border */
+  /* Add more styles as needed */
+}

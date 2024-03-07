@@ -1,0 +1,43 @@
+/* quiztheme.module.css */
+
+/* Header Styles */
+.page-header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 0;
+    border: 0;
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+  }
+  
+  .page-header-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  
+  .content-center {
+    text-align: center;
+  }
+  
+  .h1-seo {
+    font-size: 3rem;
+    margin: 0;
+  }
+  
+  .text-warning {
+    color: #ff9800; /* Change the color as needed */
+  }
+  
+  /* Quiz Page Styles */
+  .space {
+    margin: 2rem 0;
+  }
+  

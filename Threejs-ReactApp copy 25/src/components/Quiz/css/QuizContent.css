@@ -1,0 +1,113 @@
+.interactive-button.custom-button {
+  background-color: white;
+  color: #000;
+  border-radius: 20px;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: 'San Francisco', Arial, sans-serif;
+}
+
+.custom-progress-bar {
+  height: 5px;
+  background-color: #ccc;
+  border-radius: 5px;
+}
+
+/* General Typography and Color Scheme */
+body {
+  font-family: 'San Francisco', Arial, sans-serif;
+  color: #333;
+  background-color: #f4f4f4;
+}
+
+
+.higher-z-index {
+  z-index: 2;
+  position: relative; /* Ensure z-index takes effect */
+}
+
+.lower-z-index {
+  z-index: 1;
+  position: relative; /* Ensure z-index takes effect */
+}
+
+
+
+
+
+/* Custom styles for the button with ID 'quiz-selector-dropdown' */
+#quiz-selector-dropdown {
+  /* Basic styling */
+  left: 1rem;
+  color: #fff; /* Changes the text color */
+  background-color: #007bff; /* Changes the background color */
+  border-color: #007bff; /* Changes the border color */
+
+  /* Padding and dimensions */
+  padding: 10px 20px; /* Adjusts the padding around the text */
+  width: 150px; /* Sets a specific width */
+
+  /* Typography */
+  font-family: 'Arial', sans-serif; /* Changes the font family */
+  font-size: 16px; /* Changes the font size */
+  text-align: center; /* Aligns text in the center */
+
+  /* Border and outline */
+  border-radius: 5px; /* Rounds the corners */
+  outline: none; /* Removes the outline when focused */
+
+  /* Shadow and effects */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a shadow effect */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
+}
+
+/* Hover state for the button */
+#quiz-selector-dropdown:hover {
+  background-color: #0069d9; /* Changes the background color on hover */
+  color: #ececec; /* Changes the text color on hover */
+}
+
+
+/* Hover state for the button */
+#quiz-selector-dropdown:hover {
+  background-color: #0056b3; /* Darker background on hover */
+  color: #ececec; /* Lighter text color on hover */
+}
+
+/* Focus state for the button */
+#quiz-selector-dropdown:focus {
+  box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5); /* Adds a focus outline */
+}
+
+
+/* Customizing the dropdown menu */
+.custom-dropdown-menu {
+  /* Positioning */
+  position: absolute; /* Position the dropdown absolutely */
+  top: 100%; /* Position it right below the button */
+  left: 0; /* Start from the left edge of the button */
+  transform: translate3d(0, 5px, 0); /* Adjust for spacing below the button */
+  z-index: 1050; /* Ensure it appears above other content */
+
+  /* Styling */
+  background-color: white; /* Background color of the dropdown */
+  border: 1px solid #ddd; /* Border for the dropdown */
+  border-radius: 4px; /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Shadow for a bit of depth */
+
+  /* Width can be adjusted as needed */
+  min-width: 200px; /* Minimum width */
+  max-width: 300px; /* Maximum width, adjust as needed */
+}
+
+/* Styling the individual dropdown items */
+.custom-dropdown-menu .dropdown-item {
+  padding: 10px 15px; /* Padding for each item */
+  cursor: pointer; /* Cursor to indicate it's clickable */
+  /* Add more styles if needed */
+}
+
+/* Hover state for dropdown items */
+.custom-dropdown-menu .dropdown-item:hover {
+  background-color: #f8f9fa; /* Light background on hover */
+}

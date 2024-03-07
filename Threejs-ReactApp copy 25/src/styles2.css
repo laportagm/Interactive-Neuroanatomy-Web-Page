@@ -1,0 +1,650 @@
+/* Aesthetic Improvements for Webpage Styles */
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #444444;
+}
+
+:root {
+  --main-font-size: 15px;
+  --main-font-weight: 600;
+  --main-color: #fff;
+  --highlight-color: #ffc451;
+  --dropdown-box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+}
+
+a {
+  color: #ffc451;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ffd584;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Raleway', sans-serif;
+}
+
+/* General Settings */
+  
+  /* Disable AOS animation delay on mobile devices */
+  @media screen and (max-width: 768px) {
+    [data-aos-delay] {
+      transition-delay: 0 !important;
+    }
+  }
+  
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+/**
+* Desktop Navigation 
+*/
+.navbar {
+  padding: 0;
+  background-color: #333; /* Add a background color */
+}
+
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.navbar li {
+  position: relative;
+}
+
+.navbar a,
+.navbar a:focus {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: left;
+  padding: 15px 20px; /* Increase padding for better touch interactions */
+  font-size: 16px; /* Slightly larger font size */
+  font-weight: 600;
+  color: #fff;
+  white-space: nowrap;
+
+  transition: 0.3s;
+}
+
+.navbar a i,
+.navbar a:focus i {
+  font-size: 14px; /* Adjust icon size */
+  line-height: 0;
+  margin-left: 8px; /* Reduce icon margin */
+}
+
+.navbar a:hover,
+.navbar .active,
+.navbar .active:focus,
+.navbar li:hover > a {
+  color: #ffc451;
+  background-color: transparent; /* Add background color on hover */
+}
+
+.navbar .dropdown ul {
+  display: flex;
+  position: relative;
+  align-content: center;
+  justify-content: center;
+  left: 50%; /* Center the dropdown horizontally */
+  top: calc(100% + 10px); /* Adjust spacing */
+  transform: translateX(-50%); /* Center the dropdown horizontally */
+  margin: 0;
+  padding: 10px 0;
+  z-index: 99;
+  opacity: 0;
+  visibility: hidden;
+  background: #fff;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+  transition: 0.3s;
+}
+
+.navbar .dropdown ul li {
+  min-width: 200px;
+}
+
+.navbar .dropdown ul a {
+  padding: 10px 20px;
+  font-size: 14px;
+  text-transform: none;
+  color: #151515;
+  font-weight: 400;
+}
+
+.navbar .dropdown ul a i {
+  font-size: 12px;
+}
+
+.navbar .dropdown ul a:hover,
+.navbar .dropdown ul .active:hover,
+.navbar .dropdown ul li:hover > a {
+  background-color: #ffc451;
+
+}
+
+.navbar .dropdown:hover > ul {
+  opacity: 1;
+  top: 100%;
+  visibility: visible;
+}
+
+.navbar .dropdown .dropdown ul {
+  top: 0;
+  left: 100%; /* Adjust positioning */
+  visibility: hidden;
+  
+}
+
+.navbar .dropdown .dropdown:hover > ul {
+  opacity: 1;
+  top: 0;
+  left: 100%; /* Adjust positioning */
+  visibility: visible;
+}
+
+@media (max-width: 1366px) {
+  .navbar .dropdown .dropdown ul {
+    left: -100%; /* Adjust positioning */
+  }
+
+  .navbar .dropdown .dropdown:hover > ul {
+    left: -100%; /* Adjust positioning */
+  }
+}
+
+
+/* Dropdown Menu Styling */
+.dropdown-menu {
+  position: absolute;
+  min-width: 200px;
+  padding: 5px 0;
+  margin: 2px 0 0;
+  font-size: 16px;
+  color: #333;
+  text-align: left;
+  background-color: var(--main-color);
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 0.25rem;
+  box-shadow: var(--dropdown-box-shadow);
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.dropdown-item {
+  display: block;
+  position: relative;
+  align-content: center;
+  justify-content: center;
+  width: 100%;
+  padding: 0.25rem 1.5rem;
+  font-weight: 400;
+  color: #212529;
+  text-align: inherit;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 0;
+  text-decoration: none;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+  color: #16181b;
+  background-color: #f8f9fa;
+}
+
+.dropdown-menu.show {
+  display: block;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+}
+
+.dropdown-toggle::after {
+  display: inline-block;
+  margin-left: 0.255em;
+  vertical-align: 0.255em;
+  content: "";
+  border-top: 0.3em solid;
+  border-right: 0.3em solid transparent;
+  border-bottom: 0;
+  border-left: 0.3em solid transparent;
+  
+}
+
+/* Adjusting Dropdown Position */
+.nav-item .dropdown-menu {
+  top: 100%; /* Aligns top of the dropdown with the bottom of the button */
+  left: 50%;   /* Center dropdown horizontally */
+  transform: translateY(10px) translateX(-50%); /* Center dropdown horizontally and move it 10px below the button */
+}
+
+.nav-item .dropdown-menu-right {
+  top: 50%; /* Aligns top of the dropdown with the middle of the button */
+  right: 100%; /* Aligns right of the dropdown with the right of the button */
+  transform: translateY(-50%) translateX(10px); /* Center dropdown vertically and move it 10px to the right of the button */
+}
+
+  
+  /* Button Styling */
+  .btn {
+    position: relative;
+    overflow: hidden;
+    color: var(--main-color);
+    background-color: #007bff;
+    border-color: #007bff;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+                border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+  
+  .btn:hover {
+    color: var(--main-color);
+    background-color: #0056b3;
+    border-color: #0056b3;
+  }
+  
+
+  /* Scrollbar Styles for WebKit browsers (Safari, Chrome) */
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: rgba(172, 151, 138, 0.946);
+    border-radius: 5px;
+    border: 2px solid rgba(255, 255, 255, 0.4);
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  
+  /* Scrollbar Styles for Firefox */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(172, 151, 138, 0.946) rgba(255, 255, 255, 0.2);
+  }
+  
+  /* Optional: Style the scrollbar on hover for Firefox */
+  *::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+
+/* Aesthetic Improvements for Webpage Styles - Mobile Version */
+/* Aesthetic Improvements for Webpage Styles - Mobile Version */
+/* Aesthetic Improvements for Webpage Styles - Mobile Version */
+
+/* Aesthetic Improvements for Webpage Styles - Mobile Version */
+
+/* General Settings */
+:root {
+    --main-font-size: 14px; /* Slightly smaller font for mobile screens */
+    --main-font-weight: 600;
+    --main-color: #fff;
+    --highlight-color: #ffc451;
+    --dropdown-box-shadow: 0px 0px 20px rgba(127, 137, 161, 0.25); /* Lighter box-shadow for a cleaner look */
+  }
+  
+  /* Disable AOS animation delay on mobile devices */
+  @media screen and (max-width: 768px) {
+    [data-aos-delay] {
+      transition-delay: 0 !important;
+    }
+  }
+  
+  /* Styles for Navbar and Dropdown Menus */
+  .navbar-nav {
+    list-style: none;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    padding: 0; /* Reset padding for mobile */
+  }
+  
+  .nav-item {
+    position: relative;
+    margin: 0 5px; /* Reduced margin for compact layout */
+  }
+  
+  /* Navbar Link Styling */
+  .nav-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--main-color);
+    text-decoration: none;
+    padding: 8px 12px; /* Smaller padding for compact layout */
+    font-size: var(--main-font-size);
+    transition: color 0.3s;
+  }
+  
+  .nav-link i {
+    margin-right: 4px; /* Reduced margin for icons */
+  }
+  
+  .nav-link p {
+    margin: 0;
+  }
+  
+  .nav-link:hover,
+  .nav-item.dropdown.show .nav-link {
+    color: var(--highlight-color);
+  }
+  
+  /* Dropdown Menu Styling */
+  .dropdown-menu {
+    position: absolute;
+    display: none;
+    min-width: 180px; /* Slightly smaller width for mobile screens */
+    padding: 4px 0;
+    margin: 2px 0 0;
+    font-size: 14px; /* Adjusted font size for readability */
+    color: #333;
+    text-align: left;
+    background-color: var(--main-color);
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 0.25rem;
+    box-shadow: var(--dropdown-box-shadow);
+    z-index: 1000;
+  }
+  
+  .dropdown-item {
+    display: block;
+    width: 100%;
+    padding: 0.25rem 1rem; /* Adjusted padding for easier touch interaction */
+    font-weight: 400;
+    color: #212529;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+    text-decoration: none;
+  }
+  
+  .dropdown-item:hover,
+  .dropdown-item:focus {
+    color: #16181b;
+    background-color: #f8f9fa;
+  }
+  
+  .dropdown-menu.show {
+    display: block;
+  }
+  
+  .dropdown-toggle::after {
+    display: inline-block;
+    margin-left: 0.255em;
+    vertical-align: 0.255em;
+    content: "";
+    border-top: 0.3em solid;
+    border-right: 0.3em solid transparent;
+    border-bottom: 0;
+    border-left: 0.3em solid transparent;
+  }
+  
+  /* Adjusting Dropdown Position */
+  .nav-item .dropdown-menu {
+    top: 100%; /* Aligns top of the dropdown with the bottom of the button */
+    left: 0;   /* Aligns left of the dropdown with the left of the button */
+    transform: translateY(5px); /* Slight vertical offset for better visibility */
+  }
+  
+  .nav-item .dropdown-menu-right {
+    top: 50%; /* Aligns top of the dropdown with the middle of the button */
+    right: 100%; /* Aligns right of the dropdown with the right of the button */
+    transform: translateX(5px); /* Slight horizontal offset for better visibility */
+  }
+  
+  /* Button Styling */
+  .btn {
+    position: relative;
+    overflow: hidden;
+    color: var(--main-color);
+    background-color: #007bff;
+    border-color: #007bff;
+    padding: 0.375rem 0.75rem;
+    font-size: 0.9rem; /* Slightly smaller font size for buttons */
+    line-height: 1.4; /* Adjusted line height for better readability */
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+                border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+  
+  .btn:hover {
+    color: var(--main-color);
+    background-color: #0056b3;
+    border-color: #0056b3;
+  }
+
+  
+
+  /*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+#footer {
+    background: black;
+    padding: 0 0 30px 0;
+    color: #fff;
+    font-size: 14px;
+  }
+  
+  #footer .footer-top {
+    background: #151515;
+    border-bottom: 1px solid #222222;
+    padding: 60px 0 30px 0;
+  }
+  
+  #footer .footer-top .footer-info {
+    margin-bottom: 30px;
+  }
+  
+  #footer .footer-top .footer-info h3 {
+    font-size: 28px;
+    margin: 0 0 20px 0;
+    padding: 2px 0 2px 0;
+    line-height: 1;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  
+  #footer .footer-top .footer-info h3 span {
+    color: #ffc451;
+  }
+  
+  #footer .footer-top .footer-info p {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 0;
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+  }
+  
+  #footer .footer-top .social-links a {
+    font-size: 18px;
+    display: inline-block;
+    background: #292929;
+    color: #fff;
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 4px;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
+  }
+  
+  #footer .footer-top .social-links a:hover {
+    background: #ffc451;
+    color: #151515;
+    text-decoration: none;
+  }
+  
+  #footer .footer-top h4 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    position: relative;
+    padding-bottom: 12px;
+  }
+  
+  #footer .footer-top .footer-links {
+    margin-bottom: 30px;
+  }
+  
+  #footer .footer-top .footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #footer .footer-top .footer-links ul i {
+    padding-right: 2px;
+    color: #ffc451;
+    font-size: 18px;
+    line-height: 1;
+  }
+  
+  #footer .footer-top .footer-links ul li {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  #footer .footer-top .footer-links ul li:first-child {
+    padding-top: 0;
+  }
+  
+  #footer .footer-top .footer-links ul a {
+    color: #fff;
+    transition: 0.3s;
+    display: inline-block;
+    line-height: 1;
+  }
+  
+  #footer .footer-top .footer-links ul a:hover {
+    color: #ffc451;
+  }
+  
+  #footer .footer-top .footer-newsletter form {
+    margin-top: 30px;
+    background: #fff;
+    padding: 6px 10px;
+    position: relative;
+    border-radius: 4px;
+  }
+  
+  #footer .footer-top .footer-newsletter form input[type='email'] {
+    border: 0;
+    padding: 4px;
+    width: calc(100% - 110px);
+  }
+  
+  #footer .footer-top .footer-newsletter form input[type='submit'] {
+    position: absolute;
+    top: 0;
+    right: -2px;
+    bottom: 0;
+    border: 0;
+    background: none;
+    font-size: 16px;
+    padding: 0 20px;
+    background: #ffc451;
+    color: #151515;
+    transition: 0.3s;
+    border-radius: 0 4px 4px 0;
+  }
+  
+  #footer .footer-top .footer-newsletter form input[type='submit']:hover {
+    background: #ffcd6b;
+  }
+  
+  #footer .copyright {
+    text-align: center;
+    padding-top: 30px;
+  }
+  
+  #footer .credits {
+    padding-top: 10px;
+    text-align: center;
+    font-size: 13px;
+    color: #fff;
+  }
+
+  /*--------------------------------------------------------------
+# Preloader
+--------------------------------------------------------------*/
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  overflow: hidden;
+  background: #151515;
+}
+
+#preloader:before {
+  content: '';
+  position: fixed;
+  top: calc(50% - 0px);
+  left: calc(50% - 30px);
+  border: 6px solid #ffc451;
+  border-top-color: #151515;
+  border-bottom-color: #151515;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: animate-preloader 1s linear infinite;
+}
+
+@keyframes animate-preloader {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*--------------------------------------------------------------
+# Disable aos animation delay on mobile devices
+--------------------------------------------------------------*/
+@media screen and (max-width: 768px) {
+  [data-aos-delay] {
+    transition-delay: 0 !important;
+  }
+}
+  
+
+
+html {
+  scroll-behavior: smooth;
+}
+

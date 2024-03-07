@@ -1,0 +1,150 @@
+/* index-gui.css - Enhanced Styles for Three.js and dat.GUI interface */
+
+/* Container styles for the Three.js canvas */
+.threejs-container {
+  position: relative;
+  height: 100%; /* Full height to fill the parent element */
+}
+
+/* Container styles for dat.GUI interface */
+.dat-gui-container {
+  position: absolute;
+  top: -5px;
+  right: -1px;
+  z-index: 0; /* Ensure the dat.GUI panel is above other content */
+  padding: 0px;
+  margin: 0;
+}
+
+.dg ul li .title {
+  background-color: #000000;
+  border-radius: 8px;
+  padding: 0px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+/* Target the specific close-button element */
+div.close-button.close-bottom {
+  /* Set the background color */
+  border-radius: 16px;
+  font-size: 12.5px;
+  shape-rendering: auto;
+  
+  /* Set text color */
+  color: #ffffff; /* Change to your desired text color */
+  /* Add padding for better appearance */
+  /* Set text alignment to center */
+  text-align: center;
+  /* Set border radius */
+  /* Define a hover effect */
+  transition: background-color 0.3s ease;
+}
+
+/* Apply hover effect */
+div.close-button.close-bottom:hover {
+  background-color: #0056b3; /* Change to your desired hover background color */
+  cursor: pointer; /* Change cursor style on hover if desired */
+  animation: name duration timing-function delay iteration-count direction fill-mode;
+}
+
+/* You can add more styles as needed */
+
+/* Styling for property names */
+.dg .property-name {
+  font-weight: bold; /* Emphasized with bold */
+  text-transform: capitalize; /* Uniform appearance with capitalization */
+  font-size: 9.5px; /* Adjusted font size for property names */
+}
+
+/* Customization for text input fields */
+.dg .c input[type='text'] {
+  border: 1px solid #ffffff; /* Defining boundaries with a solid border */
+  background-color: #333; /* Dark theme for visual comfort */
+  color: #ffffff; /* Text color that stands out */
+}
+
+/* Slider design adjustments */
+.dg .c .slider {
+  background-color: #555; /* Neutral tone for a subtle look */
+  padding: auto;
+}
+
+/* Slider foreground enhancement */
+.dg .c .slider-fg {
+  background-color: #1b6fcf; /* Eye-catching color for better UX */
+}
+
+/* Dropdown styling for consistency and readability */
+.dg .c select {
+  background-color: #3333337b; /* Dark but slightly transparent background */
+  color: #ffffff; /* Clear, legible text color */
+}
+
+/* Checkbox appearance for a unified theme */
+.dg .c .checkbox {
+  background-color: #333; /* Cohesive with the overall dark theme */
+}
+
+/* Color input adjustments for clarity */
+.dg .c .color {
+  background-color: #ffffff; /* Neutral background to not distort colors */
+}
+
+/* Button styling for better user interaction */
+.dg .c .button {
+  background-color: #0f0303; /* Discreet background */
+  color: #ffffff; /* Text color for contrast */
+  border: none; /* Sleek, borderless design */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+/* Styling for the unordered list */
+.dg ul {
+  list-style-type: none; /* Removes default list styling */
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+/* Hover effect for buttons */
+.dg .c .button:hover {
+  background-color: #666; /* Slightly lighter on hover for feedback */
+}
+
+/* Focus effect for buttons */
+.dg .c .button:focus {
+  background-color: #777; /* Slightly darker on focus for feedback */
+}
+
+/* Enhanced folder title styling */
+.dg .title {
+  font-size: 1.3em; /* Noticeably larger for headings */
+  margin-bottom: 0px; /* Tight spacing for a compact look */
+  font-weight: bold; /* Emphasized with bold */
+  background-color: #1b6fcf;
+}
+
+/* Responsive design for better adaptability on smaller screens */
+@media (max-width: 768px) {
+  .dg.ac {
+    font-size: 12px; /* Smaller font size for space conservation */
+  }
+  .dg .cr.function {
+    margin-bottom: 15px; /* Less spacing to accommodate smaller screens */
+  }
+}
+
+/* ThreeScene.css */
+.reset-button {
+  background-color: #007acc; /* Change to your desired background color */
+  color: #fff; /* Change to your desired text color */
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.reset-button:hover {
+  background-color: #005b9f; /* Change to your desired hover color */
+}

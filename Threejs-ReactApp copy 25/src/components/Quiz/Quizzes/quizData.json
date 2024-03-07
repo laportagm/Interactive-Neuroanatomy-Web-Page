@@ -1,0 +1,18 @@
+{
+    "quizzes": [
+      {
+        "quizTitle": "General Knowledge",
+        "questions": [
+          {
+            "question": "What is the capital of France?",
+            "questionType": "text",
+            "answers": ["New York", "London", "Paris", "Dublin"],
+            "correctAnswer": "3",
+            "messageForCorrectAnswer": "Correct!",
+            "messageForIncorrectAnswer": "Incorrect."
+          }
+        ]
+      }
+    ]
+  }
+  

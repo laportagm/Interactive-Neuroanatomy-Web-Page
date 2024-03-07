@@ -1,0 +1,49 @@
+/* Center the entire component vertically and horizontally */
+.col-centered {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Adjust this value as needed */
+  }
+  
+  /* Style the pagination container */
+  .pagination-container {
+    text-align: center;
+  }
+  
+  /* Style the pagination links */
+  .pagination.pagination-primary .page-link {
+    color: #007bff; /* Change the color to your preference */
+    background-color: transparent;
+    border: 1px solid #007bff;
+    margin: 0 3px; /* Adjust the spacing between pagination items */
+    padding: 6px 12px; /* Adjust padding as needed */
+  }
+  
+  /* Style the active pagination link */
+  .pagination.pagination-primary .page-item.active .page-link {
+    background-color: #007bff; /* Change the active background color */
+    border-color: #007bff; /* Change the active border color */
+    color: #fff; /* Change the active text color */
+  }
+  
+  /* Style the previous and next buttons */
+  .pagination.pagination-primary .page-item .page-link {
+    border-radius: 50%; /* Make the buttons round */
+    width: 36px; /* Adjust the button size as needed */
+    height: 36px;
+    line-height: 32px;
+    text-align: center;
+  }
+  
+  /* Style the previous button icon */
+  .pagination.pagination-primary .page-item.prev .page-link::before {
+    content: "\2190"; /* Unicode arrow character for "Previous" */
+  }
+  
+  /* Style the next button icon */
+  .pagination.pagination-primary .page-item.next .page-link::before {
+    content: "\2192"; /* Unicode arrow character for "Next" */
+  }
+  

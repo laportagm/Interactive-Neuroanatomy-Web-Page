@@ -1,0 +1,65 @@
+/* MobileSpecificStyles.css */
+
+/* General style adjustments for mobile devices */
+@media only screen and (max-width: 768px) {
+    body {
+        font-size: 14px; /* Adjust font size for readability */
+    }
+
+    .page-header.header-filter, .page-header-image {
+        height: 200px; /* Adjust header height */
+        background-size: cover;
+    }
+
+    .quiz-hero {
+        padding: 20px; /* Adjust padding for better spacing */
+    }
+
+    .main-text, h3 {
+        text-align: center; /* Center text for better focus */
+    }
+}
+
+/* Adjustments for the 3D viewer container */
+@media only screen and (max-width: 768px) {
+    .viewer-container {
+        margin: 10px; /* Reduce margin */
+        padding: 10px; /* Reduce padding */
+    }
+
+    .threejs-container {
+        height: 300px; /* Adjust the height of the 3D viewer */
+    }
+
+    .navbar-container {
+        display: block; /* Stack navbar items vertically */
+        padding-bottom: 10px;
+    }
+}
+
+/* Adjustments for the navigation bar and footer */
+@media only screen and (max-width: 768px) {
+    .higher-z-index {
+        z-index: 10; /* Ensure navbar stays on top */
+    }
+
+    .navbar-container, .footer-container {
+        padding: 5px; /* Reduce padding */
+    }
+}
+
+/* Adjustments for buttons and interactive elements */
+@media only screen and (max-width: 768px) {
+    button, .btn {
+        font-size: 12px; /* Reduce font size */
+        padding: 10px 20px; /* Adjust padding for buttons */
+    }
+
+    .scroll-to-top-button {
+        right: 10px; /* Position adjustment */
+        bottom: 10px;
+        font-size: 12px;
+    }
+}
+
+/* Additional specific adjustments can be added here based on further testing and requirements */

@@ -1,0 +1,94 @@
+/* Mobile-specific CSS for PresentationPage */
+
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.space {
+  height: 20px; /* Reduced height for mobile */
+}
+
+.picture-header {
+  width: auto;
+  height: auto; /* Allow image to adjust its height */
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.header-filter {
+  background: rgba(58, 56, 56, 0.126);
+  width: 100%;
+  height: auto; /* Allow content to expand in height */
+}
+
+.content-center {
+  text-align: center;
+  padding: 10px; /* Reduced padding for mobile */
+  max-width: 100%; /* Full width for mobile */
+  margin: auto;
+}
+
+.page-hero {
+  font-size: 1.2rem; /* Smaller font size for mobile */
+  margin-bottom: 0.3rem; /* Reduced margin bottom */
+}
+
+/* Page Header */
+.page-header-image {
+  height: 300px; /* Reduced height for mobile */
+}
+
+.parallax2 {
+  display: flex;
+  justify-content: center;
+}
+
+.page-header {
+  height: 300px; /* Reduced height for mobile */
+}
+
+.title-1 h3 {
+  font-size: 30px; /* Smaller font size for mobile */
+  color: #c6baba;
+}
+
+.title-1 small {
+  font-size: 18px; /* Smaller font size for mobile */
+  color: #949494;
+  font-weight: bold;
+  font-family: 'Helvetica', Arial, sans-serif;
+}
+
+/* Content Center Brand */
+.content-center.brand {
+  padding: 10px; /* Reduced padding for mobile */
+  margin: 15px auto; /* Reduced margin for mobile */
+  max-width: 100%; /* Full width for mobile */
+}
+
+/* Page Hero Styles */
+.page-hero {
+  font-size: 36px; /* Smaller font size for mobile */
+  color: rgba(172, 151, 138, 0.946);
+  text-align: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .h1-seo {
+    font-size: 1.5rem; /* Adjusted font size for mobile */
+  }
+
+  h3 {
+    font-size: 1rem; /* Adjusted font size for mobile */
+  }
+
+  .bg-blob {
+    -webkit-filter: blur(2px); /* Reduced blur effect for mobile */
+    filter: blur(2px); /* Reduced blur effect for mobile */
+  }
+}

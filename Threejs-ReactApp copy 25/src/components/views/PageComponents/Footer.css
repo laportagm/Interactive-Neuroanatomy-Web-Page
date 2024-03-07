@@ -1,0 +1,16 @@
+/* Your existing styles */
+/* Example: */
+#footer {
+    background: #333;
+    color: white;
+    /* ... other styles */
+  }
+  
+  .social-button, .link-button {
+    background: none;
+    border: none;
+    color: inherit;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  

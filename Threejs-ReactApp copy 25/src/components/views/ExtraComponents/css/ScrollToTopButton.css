@@ -1,0 +1,27 @@
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: linear-gradient(to top , rgba(30, 51, 170, 0.5), rgba(147, 147, 147, 0.43), rgba(255, 255, 255, 0.307));
+    color: rgb(217, 217, 217);
+    text-transform: bold;
+    border: solid 1px #5a7a9ccc;
+    border-top: none;
+    border-radius: 5px;
+    border-radius: 8px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    z-index: 1000;
+    box-shadow: 1px 1px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition:  0.3s ease;
+  }
+  
+  .scroll-to-top:hover {
+    background-color: #0d6bcf; /* Darker shade for hover effect */
+    
+  }
+
+  
+  

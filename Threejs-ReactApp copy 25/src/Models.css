@@ -1,0 +1,11 @@
+
+.higher-z-index {
+    z-index: 2;
+    position: relative; /* Ensure z-index takes effect */
+  }
+  
+  .lower-z-index {
+    z-index: 1;
+    position: relative; /* Ensure z-index takes effect */
+  }
+

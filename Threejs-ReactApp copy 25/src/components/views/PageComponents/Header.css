@@ -1,0 +1,105 @@
+/* CSS Variables */
+:root {
+    --navbar-bg: rgba(0, 0, 0, 0.85);
+    --nav-link-spacing: 20px;
+    --btn-bg: #ffffff;
+    --btn-color: #343a40;
+    --btn-hover-bg: #343a40;
+    --btn-hover-color: #ffffff;
+  }
+  
+  /* Custom Navbar */
+  .custom-navbar {
+    background-color: var(--navbar-bg);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Adjust the spacing between navigation words */
+  .custom-nav-link {
+    margin-right: var(--nav-link-spacing);
+    font-weight: 500;
+    letter-spacing: 0.8px;
+    transition: color 0.3s ease;
+  }
+  
+  .custom-nav-link:hover {
+    color: var(--btn-hover-color);
+  }
+  
+  /* Header styling */
+.custom-header {
+    transition: all 0.5s;
+    z-index: 997;
+    padding: 15px 0;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Logo styling */
+  .custom-logo .logo-text {
+    font-size: 32px;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #fff;
+  }
+  
+  .custom-logo .logo-highlight {
+    color: #ffc451;
+  }
+  
+  /* Navigation link styling */
+  .custom-nav-link {
+    margin-right: 20px;
+    font-weight: 500;
+    letter-spacing: 0.8px;
+    transition: color 0.3s ease;
+    color: #fff !important;
+  }
+  
+  .custom-nav-link:hover {
+    color: #ffc451 !important;
+  }
+  /* Variables */
+:root {
+    --btn-bg-color: #514f4f;
+    --btn-text-color: #343a40;
+    --btn-border-color: #ffffff;
+    --btn-hover-bg-color: #343a40;
+    --btn-hover-text-color: #ffffff;
+    --btn-hover-border-color: #343a40;
+    --btn-transition: 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+    --btn-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Get Started Button styling */
+  .custom-get-started-btn {
+    display: inline-flex;  /* Enable Flexbox */
+    align-items: center;  /* Center items vertically */
+    justify-content: center;  /* Center items horizontally */
+    box-sizing: border-box;  /* Include border in width and height */
+    
+    background-color: var(--btn-bg-color);
+    color: var(--btn-text-color);
+    border: 2px solid var(--btn-border-color);  /* 2px border */
+    padding: 12px 28px;
+    font-weight: 600;
+    border-radius: 30px;
+    box-shadow: var(--btn-shadow);
+    transition: var(--btn-transition);
+    cursor: pointer;
+  }
+  
+  .custom-get-started-btn:active {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transform: translateY(2px);
+  }
+  
+  .custom-get-started-btn:hover {
+    background-color: var(--btn-hover-bg-color);
+    color: var(--btn-hover-text-color);
+    border: 2px solid var(--btn-hover-border-color);  /* 2px border */
+  }
+  

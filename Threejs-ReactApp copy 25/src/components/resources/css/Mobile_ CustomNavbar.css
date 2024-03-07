@@ -1,0 +1,56 @@
+/* MobileSpecificStyles.css for CustomNavbar */
+
+/* General adjustments for the navbar on mobile devices */
+@media only screen and (max-width: 768px) {
+    #threejsToolbar {
+        padding: 5px; /* Reduce padding for compactness */
+    }
+
+    .custom-container {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: stretch;
+    }
+
+    .custom-brand {
+        margin-bottom: 10px; /* Add space between elements when stacked */
+        text-align: center; /* Center the brand for better appearance */
+    }
+}
+
+/* Adjustments for the control bar */
+@media only screen and (max-width: 768px) {
+    .custom-control-bar {
+        order: 2; /* Reorder elements for better flow */
+        margin-bottom: 10px;
+    }
+}
+
+/* Style adjustments for buttons */
+@media only screen and (max-width: 768px) {
+    .custom-button-group {
+        order: 3; /* Ensure buttons are placed correctly */
+    }
+
+    .custom-button-group .btn {
+        font-size: 12px; /* Reduce font size for buttons */
+        padding: 5px 10px; /* Adjust padding for a compact look */
+    }
+
+    .custom-button-group .btn i {
+        margin-right: 5px; /* Adjust icon spacing */
+    }
+
+    .button-group {
+        width: 100%; /* Full width for better access */
+        justify-content: center; /* Center buttons */
+    }
+}
+
+/* Specific adjustments for the expand and space buttons */
+@media only screen and (max-width: 768px) {
+    #Expand, #Space {
+        margin: 2px; /* Reduce margin for compactness */
+    }
+}
+
+/* Further specific adjustments can be added as needed */

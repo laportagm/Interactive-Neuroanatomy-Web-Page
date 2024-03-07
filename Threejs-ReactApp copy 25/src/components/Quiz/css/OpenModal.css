@@ -1,0 +1,88 @@
+/* Styles for button */
+.button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 7px 12px; /* Wider padding */
+    border-radius: 6px;
+    width: 100px;
+    height: 39px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-Color: #0b1031e2,
+
+  }
+  
+  /* Styles for modalContainer */
+  .modalContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 90%; /* Slightly bigger width */
+    max-width: 700px; /* Slightly bigger maxWidth */
+    transform: scale(0);
+    transition: transform 0.3s ease-in-out;
+    border-radius: 32px;
+  }
+  
+  /* Styles for modalHeader */
+  .modalHeader {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    padding: 20px;
+    border: none;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 16px 16px 0 0;
+    font-family: Barlow, sans-serif;
+    background-color: #007BFF;
+  }
+  
+  /* Styles for modal */
+  .modal {
+    width: 100%;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    color: #495057;
+    border-radius: 0 0 16px 16px;
+  }
+  
+  /* Styles for modalBody */
+  .modalBody {
+    padding: 20px;
+    color: #495057;
+  }
+  
+  /* Styles for modalFooter */
+  .modalFooter {
+    padding: 15px 30px;
+    border-top: 1px solid #dee2e6;
+    justify-content: flex-end;
+  }
+  
+  /* Styles for sectionRow */
+  .sectionRow {
+    font-weight: bold;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+    font-size: 20px;
+  }
+  
+  /* Styles for sectionParagraph */
+  .sectionParagraph {
+    margin-bottom: 10px;
+    line-height: 1.4;
+  }
+  

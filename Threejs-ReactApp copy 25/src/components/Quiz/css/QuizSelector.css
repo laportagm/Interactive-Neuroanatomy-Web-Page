@@ -1,0 +1,81 @@
+
+/* Custom Dropdown Toggle Styles */
+.custom-dropdown-toggle {
+    background-color: rgb(143, 141, 141);
+    color: #000;
+    border-radius: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'San Francisco', Arial, sans-serif;
+    padding: 0.5rem 1.5rem; /* More comfortable padding */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+  }
+  
+  .custom-dropdown-toggle:hover, .interactive-button:hover {
+    background-color: #5aa3f3; /* Lighter blue on hover */
+     /* Added outline */
+  }
+  
+  /* Custom Dropdown Menu Styles */
+  .custom-dropdown-menu {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'San Francisco', Arial, sans-serif;
+    font-weight: bold;
+    background-color: #fff; /* Ensuring consistent background */
+    margin-top: 0.25rem; /* Adds a small space between toggle and menu */
+    direction: column;
+    /* Added outline */
+  }
+  
+  .quiz-selector-item {
+    font-family: 'San Francisco', Arial, sans-serif;
+    color: #333;
+    padding: 0.5rem 1rem; /* Consistent padding with toggle */
+    transition: background-color 0.2s ease; /* Transition for hover effect */
+    /* Added outline */
+  }
+  
+  .quiz-selector-item:hover {
+    background-color: #e9ecef; /* Highlight item on hover */
+    color: #0056b3; /* Change text color for visibility */
+    /* Added outline */
+  }
+  
+  /* Dropdown Menu Styles */
+  .custom-dropdown-menu {
+    position: absolute;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'San Francisco', Arial, sans-serif;
+    font-weight: bold;
+    width: auto; /* Adjust the width as needed */
+    min-width: 200px; /* Set a minimum width */
+    z-index: 1; /* Ensure the menu appears above other elements */
+    top: 100%; /* Position below the dropdown toggle */
+    left: 0; /* Align with the left edge of the toggle */
+    transform: translate3d(0, 5px, 0); /* Add a slight vertical offset */
+     /* Added outline */
+     outline: red dashed 1px; 
+  }
+  
+  .quiz-selector-item {
+    font-family: 'San Francisco', Arial, sans-serif;
+    color: #333;
+    padding: 0.5rem 1rem;
+    text-decoration: none; /* Remove underline from links */
+    display: block; /* Make each item a block element */
+    transition: background-color 0.2s ease;
+     /* Added outline */
+     outline: red dashed 1px; 
+  }
+  
+  .quiz-selector-item:hover {
+    background-color: #e9ecef;
+    color: #0056b3;
+     /* Added outline */
+     outline: red dashed 1px; 
+  }
+  
+  

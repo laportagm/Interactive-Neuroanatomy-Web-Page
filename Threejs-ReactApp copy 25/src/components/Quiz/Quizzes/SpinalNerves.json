@@ -1,0 +1,174 @@
+{
+    "quizTitle": "Spinal Nerves Quiz",
+    "questions": [
+      {
+        "question": "Weber syndrome specifically affects which cranial nerve nucleus?",
+        "questionType": "text",
+        "answers": [
+          "a) III",
+          "b) IV",
+          "c) V",
+          "d) VI",
+          "e) VII"
+        ],
+        "correctAnswer": "c) V",
+        "messageForCorrectAnswer": "Correct!",
+        "messageForIncorrectAnswer": "Incorrect."
+      },
+      {
+        "question": "Benedikt syndrome is primarily due to occlusion of which artery?",
+        "questionType": "text",
+        "answers": [
+          "a) Posterior cerebral artery",
+          "b) Basilar artery",
+          "c) Anterior cerebral artery",
+          "d) Posterior communicating artery",
+          "e) Anterior inferior cerebellar artery"
+        ],
+        "correctAnswer": "a) Posterior cerebral artery",
+        "messageForCorrectAnswer": "Correct!",
+        "messageForIncorrectAnswer": "Incorrect."
+      },
+      {
+        "question": "Which fiber tracts are involved in Claude syndrome?",
+        "questionType": "text",
+        "answers": [
+          "a) Rubrodentate fibers",
+          "b) Corticospinal tracts",
+          "c) Medial lemniscus",
+          "d) Spinothalamic tracts",
+          "e) Lateral lemniscus"
+        ],
+        "correctAnswer": "a) Rubrodentate fibers",
+        "messageForCorrectAnswer": "Correct!",
+        "messageForIncorrectAnswer": "Incorrect."
+      },
+      {
+        "question": "Marie-Foix syndrome primarily affects which part of the pons?",
+        "questionType": "text",
+        "answers": [
+          "a) Ventral",
+          "b) Dorsal",
+          "c) Lateral",
+          "d) Medial",
+          "e) Ventromedial"
+        ],
+        "correctAnswer": "a) Ventral",
+        "messageForCorrectAnswer": "Correct!",
+        "messageForIncorrectAnswer": "Incorrect."
+      },
+      {
+        "question": "In Foville syndrome, which cranial nerves' nuclei are likely to be affected?",
+        "questionType": "text",
+        "answers": [
+          "a) V, VI",
+          "b) VI, VII",
+          "c) VII, VIII",
+          "d) III, IV",
+          "e) IX, X"
+        ],
+        "correctAnswer": "b) VI, VII",
+        "messageForCorrectAnswer": "Correct!",
+        "messageForIncorrectAnswer": "Incorrect."
+      },
+      {
+        "question": "Millard-Gubler syndrome involves a lesion affecting which tracts?",
+        "questionType": "text",
+        "answers": [
+          "a) Corticospinal and abducens",
+          "b) Spinothalamic and trigeminal",
+          "c) Corticobulbar and vestibulocochlear",
+          "d) Medial lemniscus and facial",
+          "e) Lateral lemniscus and hypoglossal"
+        ],
+        "correctAnswer": "a) Corticospinal and abducens",
+        "messageForCorrectAnswer": "Correct!",
+        "messageForIncorrectAnswer": "Incorrect."
+      },
+      {
+        "question": "Wallenberg syndrome is commonly caused by an insult to which artery?",
+        "questionType": "text",
+        "answers": [
+          "a) Anterior spinal artery",
+          "b) Posterior inferior cerebellar artery",
+          "c) Basilar artery",
+          "d) Vertebral artery",
+          "e) Posterior cerebral artery"
+        ],
+        "correctAnswer": "b) Posterior inferior cerebellar artery",
+        "messageForCorrectAnswer": "Correct!",
+        "messageForIncorrectAnswer": "Incorrect."
+      },
+      {
+        "question": "Dejerine syndrome affects which of the following cranial nerves?",
+        "questionType": "text",
+        "answers": [
+          "a) V",
+          "b) VII",
+          "c) IX",
+          "d) XII",
+          "e) X"
+        ],
+        "correctAnswer": "d) XII",
+        "messageForCorrectAnswer": "Correct!",
+        "messageForIncorrectAnswer": "Incorrect."
+      },
+      {
+        "question": "Babinski-Nageotte syndrome typically involves which of the following symptoms?",
+        "questionType": "text",
+        "answers": [
+          "a) Ipsilateral cerebellar ataxia",
+          "b) Contralateral hemiplegia",
+          "c) Horner syndrome",
+          "d) All of the above",
+          "e) None of the above"
+        ],
+        "correctAnswer": "d) All of the above",
+        "messageForCorrectAnswer": "Correct!",
+        "messageForIncorrectAnswer": "Incorrect."
+      },
+      {
+        "question": "In multiple system atrophy (MSA-C form), which MRI sign is commonly seen?",
+        "questionType": "text",
+        "answers": [
+          "a) 'Hot cross bun' sign",
+          "b) 'Mickey Mouse' sign",
+          "c) 'Apple-core' sign",
+          "d) 'Target' sign",
+          "e) 'Doughnut' sign"
+        ],
+        "correctAnswer": "a) 'Hot cross bun' sign",
+        "messageForCorrectAnswer": "Correct!",
+        "messageForIncorrectAnswer": "Incorrect."
+      },
+      {
+        "question": "What is the earliest MRI sign in osmotic demyelination syndrome?",
+        "questionType": "text",
+        "answers": [
+          "a) T1 hypointensity",
+          "b) T2 hyperintensity",
+          "c) FLAIR hyperintensity",
+          "d) Restricted diffusion",
+          "e) Gadolinium enhancement"
+        ],
+        "correctAnswer": "d) Restricted diffusion",
+        "messageForCorrectAnswer": "Correct!",
+        "messageForIncorrectAnswer": "Incorrect."
+      },
+      {
+        "question": "Wernicke encephalopathy primarily affects which of the following structures?",
+        "questionType": "text",
+        "answers": [
+          "a) Mammillary bodies",
+          "b) Medulla",
+          "c) Basal ganglia",
+          "d) Cerebellum",
+          "e) Amygdala"
+        ],
+        "correctAnswer": "a) Mammillary bodies",
+        "messageForCorrectAnswer": "Correct!",
+        "messageForIncorrectAnswer": "Incorrect."
+      }
+    ]
+  }
+  

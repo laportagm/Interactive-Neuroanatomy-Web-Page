@@ -1,0 +1,20 @@
+.arrow-down {
+    text-align: center;
+  }
+  
+  .arrow-bar {
+    width: 4px;
+    height: 30px;
+    background-color: #007bff;    
+    margin: 0 auto;
+  }
+  
+  .arrow-head {
+    width: 2px;
+    height: 2px;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 20px solid #007bff; /* Blue color for the arrow */
+    margin: 0 auto;
+  }
+  

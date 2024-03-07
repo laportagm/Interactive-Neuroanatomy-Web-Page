@@ -1,0 +1,85 @@
+.page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: auto;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  
+}
+
+
+.page-container h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* BrainstemInformation.css */
+
+.brainstemInformation {
+    font-family: 'Arial', sans-serif;
+    color: #333333;
+    background-color: #f4f4f4;
+    padding: 20px;
+  }
+  
+  .brainstemInformation .mainContainer {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 20px;
+  }
+  
+  .brainstemInformation h1.mainTitle {
+    font-size: 28px;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  
+  .brainstemInformation p.mainParagraph {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555555;
+    margin-bottom: 20px;
+  }
+  
+  .brainstemInformation .section {
+    background-color: #e9ecef;
+    border-radius: 5px;
+    padding: 15px;
+    margin-top: 20px;
+  }
+  
+  .brainstemInformation .section h2.sectionTitle {
+    font-size: 22px;
+    color: #34495e;
+    margin-bottom: 10px;
+  }
+  
+  .brainstemInformation .section p.sectionParagraph {
+    font-size: 15px;
+    line-height: 1.5;
+    color: #4a4a4a;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .brainstemInformation h1.mainTitle, 
+    .brainstemInformation .section h2.sectionTitle {
+      font-size: 20px;
+    }
+  
+    .brainstemInformation p.mainParagraph, 
+    .brainstemInformation .section p.sectionParagraph {
+      font-size: 14px;
+    }
+  }
+
+  .bar {
+    color:rgba(0, 0, 0, 0.1);
+  }

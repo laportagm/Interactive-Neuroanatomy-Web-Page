@@ -1,0 +1,68 @@
+/* QuizSelector.module.css */
+
+/* Style for the container of the QuizSelector component */
+.quiz-selector {
+    margin: 20px;
+    text-align: center; /* Center-align the dropdown */
+  }
+  
+  /* Style for the dropdown toggle button */
+  .custom-dropdown-toggle {
+    background-color: #007bff; /* Blue color for the button */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px; /* Increase font size for readability */
+    transition: background-color 0.3s; /* Add smooth hover effect */
+  }
+  
+  .custom-dropdown-toggle:hover {
+    background-color: #0056b3; /* Darker blue color on hover */
+    outline: blue dashed 1px; /* Blue dashed outline */
+  }
+  
+  /* Style for the dropdown menu */
+  .custom-dropdown-menu {
+    background-color: #d3ccc5; /* White background color for the dropdown menu */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    width: 200px; /* Set a fixed width */
+  }
+  
+  /* Style for each item in the dropdown menu */
+  .quiz-selector-item {
+    background-color: #d3ccc5; /* White background color for the dropdown menu */
+
+    cursor: pointer;
+    padding: 10px 20px;
+    transition: background-color 0.3s; /* Add smooth hover effect */
+  }
+  
+  .quiz-selector-item:hover {
+    background-color: #f8f8f8; /* Light gray color on hover */
+  }
+  
+  /* Style for the dropdown arrow icon */
+  .dropdown-toggle::after {
+    display: none; /* Hide the default arrow icon */
+  }
+  
+  /* Style for the selected quiz text */
+  .selected-quiz {
+    font-weight: bold; /* Make the selected quiz title bold */
+    outline: cyan dashed 1px; /* Cyan dashed outline */
+  }
+  
+  /* Style for the dropdown indicator icon */
+  .dropdown-indicator {
+    margin-left: 5px;
+  }
+  
+  /* Style for the dropdown indicator icon when the menu is open */
+  .dropdown.show .dropdown-indicator {
+    transform: rotate(180deg); /* Rotate the indicator icon when the menu is open */
+  }
+  
